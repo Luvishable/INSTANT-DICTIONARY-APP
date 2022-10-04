@@ -2,6 +2,7 @@ import justpy as jp
 from webapp import layout
 from webapp import page
 
+
 class About(page.Page):
     path = "/about"
 
@@ -10,7 +11,7 @@ class About(page.Page):
 
         lay = layout.DefaultLayout(a=wp)
 
-        container= jp.QPageContainer(a=lay)
+        container = jp.QPageContainer(a=lay)
 
         div = jp.Div(a=container, classes="bg-gray-200 h-screen p-2")
         jp.Div(a=div, text="This is the About Page!", classes="text-4xl m-2")
@@ -26,10 +27,6 @@ class About(page.Page):
             Donec tristique diam sapien, a lobortis nunc imperdiet at. Nullam felis purus, gravida nec mauris nec, 
             ultrices convallis lorem. Cras quis commodo sapien. Nullam id massa at velit cursus feugiat at vitae nunc.
             """,
-            classes="text-lg"
+            classes="text-lg",
         )
         return wp
-
-
-
-
